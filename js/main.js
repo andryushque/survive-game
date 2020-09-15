@@ -1,6 +1,5 @@
 $(document).ready(function () {
   /*=== Header dropdown menu ===*/
-
   const selectSingle = document.querySelector(".select");
   const selectSingle_title = selectSingle.querySelector(".select__title");
   const selectSingle_labels = selectSingle.querySelectorAll(".select__label");
@@ -21,4 +20,12 @@ $(document).ready(function () {
       selectSingle.setAttribute("data-state", "");
     });
   }
+
+  /*=== Mobile Menu ===*/
+  var mmenuButton = $(".mmenu");
+  mmenuButton.on("click", function () {
+    mmenuButton.toggleClass("active");
+    $(".header__nav").toggleClass("header__nav--hidden");
+    $(".header__stores").toggleClass("header__stores--hidden");
+  });
 });

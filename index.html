@@ -29,7 +29,7 @@
             <img src="img/logo.png" alt="Logotype: SOS" class="logo__image" />
           </a>
 
-          <nav class="nav header__nav">
+          <nav class="nav header__nav header__nav--hidden">
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="#" class="nav__link link">Main</a>
@@ -51,10 +51,7 @@
 
           <form class="dropdown header__dropdown">
             <div class="select" data-state="">
-              <div class="select__title" data-default="Option 0">
-                Eng
-                <!-- <i class="select__icon fas fa-chevron-down"></i> -->
-              </div>
+              <div class="select__title" data-default="Option 0">Eng</div>
 
               <div class="select__content">
                 <input
@@ -93,7 +90,7 @@
             </div>
           </form>
 
-          <div class="stores">
+          <div class="stores header__stores header__stores--hidden">
             <a href="#" class="stores__link link">
               <i class="stores__icon fab fa-xbox"></i>
             </a>
@@ -101,6 +98,12 @@
               <i class="stores__icon fab fa-steam"></i>
             </a>
           </div>
+
+          <button class="button mmenu">
+            <span class="mmenu__line"></span>
+            <span class="mmenu__line"></span>
+            <span class="mmenu__line"></span>
+          </button>
         </div>
         <!-- /.header-wrapper -->
       </div>
