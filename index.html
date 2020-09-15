@@ -22,7 +22,90 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" class="logo header__logo">
+            <img src="img/logo.png" alt="Logotype: SOS" class="logo__image" />
+          </a>
+
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Main</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Game Features</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">System Requirements</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Quotes</a>
+              </li>
+            </ul>
+          </nav>
+
+          <form class="dropdown header__dropdown">
+            <div class="select" data-state="">
+              <div class="select__title" data-default="Option 0">
+                Eng
+                <!-- <i class="select__icon fas fa-chevron-down"></i> -->
+              </div>
+
+              <div class="select__content">
+                <input
+                  id="singleSelect0"
+                  class="select__input"
+                  type="radio"
+                  name="singleSelect"
+                  checked
+                />
+                <label for="singleSelect0" class="select__label">Eng</label>
+
+                <input
+                  id="singleSelect1"
+                  class="select__input"
+                  type="radio"
+                  name="singleSelect"
+                />
+                <label for="singleSelect1" class="select__label">Rus</label>
+
+                <input
+                  id="singleSelect2"
+                  class="select__input"
+                  type="radio"
+                  name="singleSelect"
+                />
+                <label for="singleSelect2" class="select__label">Fra</label>
+
+                <input
+                  id="singleSelect3"
+                  class="select__input"
+                  type="radio"
+                  name="singleSelect"
+                />
+                <label for="singleSelect3" class="select__label">Deu</label>
+              </div>
+            </div>
+          </form>
+
+          <div class="stores">
+            <a href="#" class="stores__link link">
+              <i class="stores__icon fab fa-xbox"></i>
+            </a>
+            <a href="#" class="stores__link link">
+              <i class="stores__icon fab fa-steam"></i>
+            </a>
+          </div>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
     <!-- /.header -->
 
     <main class="main"></main>
