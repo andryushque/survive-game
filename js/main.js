@@ -28,4 +28,28 @@ $(document).ready(function () {
     $(".header__nav").toggleClass("header__nav--hidden");
     $(".header__stores").toggleClass("header__stores--hidden");
   });
+
+  /*=== Flickity - Gallery Photo Slider ===*/
+  var aboutGallerySwiper = new Swiper(".about__gallery", {
+    loop: true,
+    speed: 500,
+    slidesPerView: 1,
+    watchSlidesVisibility: true,
+    slideClass: "swiper-slide",
+    slideVisibleClass: "swiper-slide--visible",
+
+    navigation: {
+      nextEl: ".about__button--next",
+      prevEl: ".about__button--prev",
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+
+    keyboard: {
+      enabled: true,
+    },
+  });
 });
