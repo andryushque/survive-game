@@ -29,7 +29,7 @@ $(document).ready(function () {
     $(".header__stores").toggleClass("header__stores--hidden");
   });
 
-  /*=== Flickity - Gallery Photo Slider ===*/
+  /*=== Gallery Photo Slider ===*/
   var aboutGallerySwiper = new Swiper(".about__gallery", {
     loop: true,
     speed: 500,
@@ -51,5 +51,15 @@ $(document).ready(function () {
     keyboard: {
       enabled: true,
     },
+  });
+
+  /*=== Features Accordion ===*/
+  $(".accordion__tab").click(function () {
+    $(".accordion__tab").each(function () {
+      $(this).parent().removeClass("active");
+      $(this).removeClass("active");
+    });
+    $(this).parent().addClass("active");
+    $(this).addClass("active");
   });
 });

@@ -1,0 +1,95 @@
+.features
+  position: relative
+  height: 100vh
+  background-image: url(../img/features-bg.png)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  .container
+    height: 100%
+  &__overlay
+    z-index: 2
+    background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 25%, #080A0B 99%)
+    @include section-overlay-position()
+
+  &-wrapper
+    position: relative
+    z-index: 98
+    height: 100%
+    padding: 16rem 0
+
+  &__suptitle
+    margin-bottom: 1rem
+    @include section-title-h3()
+
+  &__title
+    margin-bottom: 7rem
+    @include section-title()
+
+  .accordion
+    max-width: 50rem
+    height: 6rem
+    overflow: hidden
+    transition: height 0.3s ease
+
+    &__tab
+      height: 6rem
+      display: flex
+      align-items: flex-end
+      cursor: pointer
+      user-select: none
+      font: normal 700 3.6rem/3.6rem 'BebasNeue'
+      letter-spacing: 2px
+      color: $color-accent
+      .accordion
+        &__icon
+          position: relative
+          display: block
+          margin-right: 2rem
+          margin-bottom: 1.4rem
+          width: 1.4rem
+          height: 1.4rem
+          border: 2px solid $color-light
+          border-radius: 50%
+          transition: background-color 0.3s ease
+          &::after, &::before
+            position: absolute
+            left: 0.5rem
+            z-index: 100
+            content: ""
+            display: block
+            height: 15rem
+            width: 2px
+            background-color: $color-light
+          &::before
+            bottom: 1rem
+          &::after
+            top: 1rem
+
+    &.active
+      height: 16rem
+      .accordion
+        &__icon
+          background-color: $color-light
+
+    &:first-child
+      .accordion
+        &__tab
+          .accordion
+            &__icon
+              &::before
+                display: none
+    &:last-child
+      .accordion
+        &__tab
+          .accordion
+            &__icon
+              &::after
+                display: none
+
+    &__content
+      padding-top: 1rem
+      padding-left: 4rem
+      color: $color-light
+      font: normal 400 1.8rem/2.2rem 'OpenSans'
+      text-align: justify
