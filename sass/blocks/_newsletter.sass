@@ -1,0 +1,51 @@
+.newsletter
+  position: relative
+  height: 100vh
+  background-color: #080A0B
+  .container
+    height: 100%
+
+  &-wrapper
+    position: relative
+    z-index: 98
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+  &__content
+    width: 60%
+  &__suptitle
+    margin-bottom: 1rem
+    @include section-title-h3()
+  &__title
+    margin-bottom: 4.5rem
+    @include section-title()
+  &__text
+    margin-bottom: 6rem
+    font: normal 400 1.8rem/2.2rem 'OpenSans'
+    text-align: justify
+    color: $color-light
+
+  &__form
+    display: flex
+    justify-content: space-between
+  .form
+    &__input
+      display: flex
+      align-items: center
+      width: 60%
+      height: 6rem
+      padding: 0 2rem
+      outline: none
+      border: none
+      border-radius: 4px
+      background: rgba(255, 255, 255, 0.08)
+      font: normal 400 1.8rem/2.5rem 'OpenSans'
+      color: $color-accent
+      &::placeholder
+        font: normal 400 1.4rem/6rem 'OpenSans'
+        color: $color-light
+        opacity: 0.5
+    &__button
+      width: 36%
+
