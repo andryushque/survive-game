@@ -113,3 +113,40 @@
       &__button
         width: 42rem
         max-width: 100%
+
+  .footer
+    .logo
+      width: 6rem
+      height: 6rem
+    .nav
+      &__list
+        flex-wrap: wrap
+        justify-content: center
+      &__item
+        margin: 0 1rem 2rem
+    &__social
+      &-link
+        margin-left: 3rem
+    &-copyright
+      flex-direction: column
+    .copyright
+      &__text
+        margin-bottom: 2rem
+      &__links
+        flex-direction: column
+        justify-content: center
+        align-items: center
+      &__link
+        margin-left: 0
+        &:nth-child(2)
+          &::after
+            content: ''
+            position: absolute
+            right: -1rem
+            top: 0
+            height: 100%
+            width: 1px
+            background-color: $color-light
+        &:last-child
+          &::before
+            display: none
